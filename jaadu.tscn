@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://d0utmiophsye1"]
+
+[ext_resource type="Script" uid="uid://du0508sp3jorw" path="res://scripts/player/player.gd" id="1_7hdbg"]
+[ext_resource type="Texture2D" uid="uid://cdkvc40i2otsb" path="res://assets/characters/jaadu.png" id="1_hs0wc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7hdbg"]
+size = Vector2(120, 280)
+
+[node name="Jaadu" type="CharacterBody2D" unique_id=1172244688]
+script = ExtResource("1_7hdbg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1696727072]
+position = Vector2(0, -145)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_hs0wc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1114031105]
+position = Vector2(0, -140)
+shape = SubResource("RectangleShape2D_7hdbg")
